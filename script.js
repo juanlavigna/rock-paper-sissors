@@ -6,7 +6,7 @@ function computerPlay (){
 } 
 
 
-function jugada (computer, user) {
+function singleRound (computer, user) {
     if (      (computer === "piedra" && user === "papel") ||
               (computer === "tijera" && user === "piedra") ||
               (computer === "papel" && user === "tijera")) {
@@ -25,7 +25,8 @@ seleccionUsuario = seleccionUsuario.toLowerCase();
 
 let seleccionComputadora = computerPlay();
 
-jugada(seleccionComputadora, seleccionUsuario);
+//singleRound(seleccionComputadora, seleccionUsuario);
 
+function juego
 
 

@@ -10,11 +10,11 @@ function jugada (computer, user) {
     if (      (computer === "piedra" && user === "papel") ||
               (computer === "tijera" && user === "piedra") ||
               (computer === "papel" && user === "tijera")) {
-        console.log (`You win!! ${user} beats ${computer}.`)
+        console.log (`Ganaste!! ${user} le gana a ${computer}.`)
     }else if ((computer === "papel" && user === "piedra") ||
               (computer === "piedra" && user === "tijera") ||
               (computer === "tijera" && user === "papel")) {
-        console.log (`You lose!! ${computer} beats ${user}.`)
+        console.log (`Perdiste!! ${computer} le gana a ${user}.`)
     }else {
         console.log ("Empataronnnn")
     }

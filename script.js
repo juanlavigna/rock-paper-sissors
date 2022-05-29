@@ -20,9 +20,10 @@ function jugada (computer, user) {
     }
 }
 
-let seleccionUsuario = prompt ("elige piedra, papel o tijera")
+let seleccionUsuario = prompt("elige piedra, papel o tijera");
+seleccionUsuario = seleccionUsuario.toLowerCase();
 
-let seleccionComputadora = computerPlay()
+let seleccionComputadora = computerPlay();
 
 jugada(seleccionComputadora, seleccionUsuario);
 

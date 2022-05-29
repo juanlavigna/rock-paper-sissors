@@ -9,15 +9,15 @@ function singleRound (computer, user) {
     if (      (computer === "piedra" && user === "papel") ||
               (computer === "tijera" && user === "piedra") ||
               (computer === "papel" && user === "tijera")) {
-        console.log (`Ganaste!! ${user} le gana a ${computer}.`)
+        return console.log (`Ganaste!! ${user} le gana a ${computer}.`)
     }else if ((computer === "papel" && user === "piedra") ||
               (computer === "piedra" && user === "tijera") ||
               (computer === "tijera" && user === "papel")) {
-        console.log (`Perdiste!! ${computer} le gana a ${user}.`)
+        return console.log (`Perdiste!! ${computer} le gana a ${user}.`)
     }else if (computer === user){
-        console.log ("Empataronnnn")
+        return console.log (`Empataron! ambos eligieron ${user}`)
     }else {
-        console.log ("Entrada no válida")
+        return console.log ("Entrada no válida")
     }
 }
 

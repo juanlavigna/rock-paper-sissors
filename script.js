@@ -13,16 +13,16 @@ function singleRound (computer, user) {
               (computer === "papel" && user === "tijera")) {
         console.log (`Ganaste!! ${user} le gana a ${computer}.`)
         puntaje++
-        console.log(puntaje)
+        console.log(`Puntaje total: ${puntaje}`)
     }else if ((computer === "papel" && user === "piedra") ||
               (computer === "piedra" && user === "tijera") ||
               (computer === "tijera" && user === "papel")) {
         console.log (`Perdiste!! ${computer} le gana a ${user}.`);
         puntaje--
-        console.log(puntaje)
+        console.log(`Puntaje total: ${puntaje}`)
     }else if (computer === user){
         console.log (`Empataron! ambos eligieron ${user}`)
-        console.log(puntaje)
+        console.log(`Puntaje total: ${puntaje}`)
     }else {
         console.log ("Entrada no válida")
     }

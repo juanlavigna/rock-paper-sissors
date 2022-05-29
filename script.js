@@ -14,8 +14,10 @@ function singleRound (computer, user) {
               (computer === "piedra" && user === "tijera") ||
               (computer === "tijera" && user === "papel")) {
         console.log (`Perdiste!! ${computer} le gana a ${user}.`)
-    }else {
+    }else if (computer === user){
         console.log ("Empataronnnn")
+    }else {
+        console.log ("Entrada no válida")
     }
 }
 

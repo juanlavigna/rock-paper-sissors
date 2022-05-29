@@ -5,7 +5,6 @@ function computerPlay (){
     return computerChoice
 } 
 
-
 function singleRound (computer, user) {
     if (      (computer === "piedra" && user === "papel") ||
               (computer === "tijera" && user === "piedra") ||
@@ -20,13 +19,12 @@ function singleRound (computer, user) {
     }
 }
 
-let seleccionUsuario = prompt("elige piedra, papel o tijera");
-seleccionUsuario = seleccionUsuario.toLowerCase();
+function game () {
+    for (let i = 0; i < 5; i++) {
+        let seleccionUsuario = (prompt("elige piedra, papel o tijera")).toLowerCase();
+        let seleccionComputadora = computerPlay();
+        singleRound(seleccionComputadora, seleccionUsuario);
+    }
+}
 
-let seleccionComputadora = computerPlay();
-
-//singleRound(seleccionComputadora, seleccionUsuario);
-
-function juego
-
-
+game ();

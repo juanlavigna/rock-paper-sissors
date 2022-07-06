@@ -1,0 +1,38 @@
+body{
+    background-color: gray;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.caja{
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#rock{
+    background-image: url(img/piedra.png);
+}
+
+#paper{
+    background-image: url(img/papel.png);
+}
+
+#sissor{
+    background-image: url(img/tijera.png);
+}
+
+.transform{
+    transform: scale(0.9);
+}

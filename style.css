@@ -6,12 +6,26 @@ h1{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     margin-bottom: 70px;
+    text-shadow: 0 0 2rem #000000;;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: larger;
+    margin-top: 50px; 
+}
+
+h2{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: larger;
 }
 
 .contenedor {
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 8rem; 
 }
 
 .caja{
@@ -21,18 +35,19 @@ h1{
     border-radius: 5px;
 }
 
-#rock{
+#piedra{
     background-image: url(img/piedra.png);
 }
 
-#paper{
+#papel{
     background-image: url(img/papel.png);
 }
 
-#sissor{
+#tijera{
     background-image: url(img/tijera.png);
 }
 
 .transform{
-    transform: scale(0.9);
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem #000000;
 }

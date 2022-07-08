@@ -33,6 +33,7 @@ h2{
     width: 100px;
     height: 100px;
     border-radius: 5px;
+    transition: all .07s;
 }
 
 #piedra{
@@ -48,6 +49,6 @@ h2{
 }
 
 .transform{
-    transform: scale(1.1);
+    transform: scale(0.9);
     box-shadow: 0 0 1rem #000000;
 }

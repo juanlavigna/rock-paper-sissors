@@ -34,7 +34,7 @@ function removeTransition (e){
 }
 
 let jugadas = 0;
-const RONDAS = 5;
+const RONDAS = 3;
 let userScore = 0;
 let computerScore = 0;
 

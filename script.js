@@ -65,7 +65,7 @@ function singleRound (computer, user) {
         jugadas++
         PARRAFO.textContent = `Ganaste!! ${user} le gana a ${computer}.`
         PARRAFO2.textContent = `Compu: ${computerScore} - Usuario: ${userScore}`
-        if(jugadas === RONDAS && userScore>computerScore){
+        if(jugadas >= RONDAS && userScore>computerScore){
             H2.textContent = "Ganaste el juego rey!"
             return
         }
@@ -77,7 +77,7 @@ function singleRound (computer, user) {
         jugadas++
         PARRAFO.textContent = `Perdiste!! ${computer} le gana a ${user}.`
         PARRAFO2.textContent = `Compu: ${computerScore} - Usuario: ${userScore}`
-        if(jugadas === RONDAS && computerScore>userScore){
+        if(jugadas >= RONDAS && computerScore>userScore){
             H2.textContent = "Perdiste hermano, volvé a intentarlo."
             return
         }

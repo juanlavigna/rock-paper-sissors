@@ -52,7 +52,7 @@ function checkWinner() {
 }
 */
 let jugadas = 0;
-const RONDAS = 3;
+const RONDAS = 5;
 let userScore = 0;
 let computerScore = 0;
 

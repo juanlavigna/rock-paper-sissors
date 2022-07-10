@@ -33,24 +33,6 @@ function removeTransition (e){
     console.log(propertyName)
 }
 
-/* FALTA CHEQUEAR QUIEN GANO DESPUES DE LAS 5 JUGADAS
-function checkWinner() {
-    if(puntaje === 0){
-        console.log(`Empataron`)
-
-    }else if(puntaje < 0){
-        console.log(`Perdiste el juego`)
-    }else {
-        console.log(`Ganaste el juego!`)
-    }
-    divs.forEach((div) => {
-        div.removeEventListener("click", (e) =>{
-            div.classList.add("transform")
-            singleRound(computerPlay(), e.path[0].id)
-        })
-    })
-}
-*/
 let jugadas = 0;
 const RONDAS = 5;
 let userScore = 0;
@@ -84,25 +66,10 @@ function singleRound (computer, user) {
     }else if (computer === user){
         PARRAFO.textContent = `Empataron! ambos eligieron ${user}`
         PARRAFO2.textContent = `Compu: ${computerScore} - Usuario: ${userScore}`
-        // H2.textContent = `Puntaje total: ${puntaje}`
     }
-    // checkWinner()
 
 }
 
-
-
-// function game () {
-//     for (let i = 0; i < 10; i++) {
-//     }
-//     if (puntaje > 0){
-//         console.log("Ganaste el juego!")
-//     }else if(puntaje < 0) {
-//         console.log("Perdiste el juego :(")
-//     }else {
-//         console.log("Empataron el juego!")
-//     }
-// }
 
 
 
